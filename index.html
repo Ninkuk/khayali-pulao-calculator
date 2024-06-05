@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Khayali Pulao Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-slate-900 p-5">
+		<h1 class="text-3xl font-bold text-slate-100">
+			Khayali Pulao Calculator
+		</h1>
+		<p class="text-sm font-extralight text-slate-400">
+			A calculator to cook up some khayali pulao
+		</p>
+
+		<form class="my-5 flex flex-col gap-3 md:flex-row">
+			<input
+				id="profits"
+				type="number"
+				class="block w-full rounded-md border-slate-700 bg-transparent text-sm text-slate-200 focus:border-slate-700 focus:ring-2 focus:ring-blue-500"
+				placeholder="Profits per unit" />
+
+			<p class="text-center text-slate-500">&times;</p>
+
+			<input
+				id="units"
+				type="number"
+				class="block w-full rounded-md border-slate-700 bg-transparent text-sm text-slate-200 focus:border-slate-700 focus:ring-2 focus:ring-blue-500"
+				placeholder="Units sold" />
+
+			<p class="text-center text-slate-500">&times;</p>
+
+			<select
+				id="duration-unit"
+				class="rounded-md border-slate-700 bg-transparent text-sm text-slate-500 focus:border-slate-700 focus:ring-2 focus:ring-blue-500">
+				<option value="1">Daily</option>
+				<option value="7">Weekly</option>
+				<option selected value="30">Monthly</option>
+				<option value="365">Yearly</option>
+			</select>
+
+			<p class="text-center text-slate-500">&divide;</p>
+
+			<input
+				id="shares"
+				type="number"
+				class="block w-full rounded-md border-slate-700 bg-transparent text-sm text-slate-200 focus:border-slate-700 focus:ring focus:ring-blue-500"
+				placeholder="Shares" />
+
+			<p class="text-center text-slate-500">&equals;</p>
+
+			<div class="flex items-center justify-center">
+				<h2
+					id="result"
+					class="text-center text-xl font-bold text-slate-200">
+					$ 0
+				</h2>
+				<select
+					id="result-unit"
+					class="rounded-md border-transparent bg-transparent text-sm text-slate-500 focus:border-transparent focus:ring-0 focus:ring-transparent">
+					<option value="1">/ day</option>
+					<option value="7">/ week</option>
+					<option value="30">/ month</option>
+					<option selected value="365">/ year</option>
+				</select>
+			</div>
+		</form>
+
+		<script src="../src/validation.js"></script>
+		<script src="../src/app.js"></script>
+	</body>
+</html>
