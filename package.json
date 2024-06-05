@@ -1,0 +1,26 @@
+{
+	"name": "khayali-pulao-calculator",
+	"version": "1.0.0",
+	"description": "A calculator to cook up some khayali pulao",
+	"main": "app.js",
+	"scripts": {
+		"build-tw": "tailwindcss -i ./src/style.css -o ./public/style.css --minify",
+		"build": "npm run build-tw"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ninkuk/khayali-pulao-calculator.git"
+	},
+	"author": "Ninad Kulkarni",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Ninkuk/khayali-pulao-calculator/issues"
+	},
+	"homepage": "https://github.com/Ninkuk/khayali-pulao-calculator#readme",
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.7",
+		"prettier": "^3.3.0",
+		"prettier-plugin-tailwindcss": "^0.6.1",
+		"tailwindcss": "^3.4.3"
+	}
+}
